@@ -1,0 +1,429 @@
+/*
+ * Globals
+ */
+
+body {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #555;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	margin-top: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	color: #333;
+}
+
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+	.container {
+		width: 970px;
+	}
+}
+
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+	background-color: transparent;
+}
+
+
+/* Nav links */
+
+.blog-nav-item {
+	position: relative;
+	display: inline-block;
+	padding: 10px;
+	font-weight: 500;
+	color: #cdddeb;
+}
+
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/* Active state gets a caret at the bottom */
+
+.blog-nav .active {
+	color: #fff;
+}
+
+.blog-nav .active:after {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	margin-left: -5px;
+	vertical-align: middle;
+	content: " ";
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid;
+	border-left: 5px solid transparent;
+}
+
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.blog-title {
+	margin-top: 30px;
+	margin-bottom: 0;
+	font-size: 60px;
+	font-weight: normal;
+}
+
+.blog-description {
+	font-size: 20px;
+	color: #999;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+
+/* Sidebar modules for boxing content */
+
+.sidebar-module {
+	padding: 15px;
+	margin: 0 -15px 15px;
+}
+
+.sidebar-module-inset {
+	padding: 15px;
+	background-color: #f5f5f5;
+	border-radius: 4px;
+}
+
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+	margin-bottom: 0;
+}
+
+
+/* Pagination */
+
+.pager {
+	margin-bottom: 60px;
+	text-align: left;
+}
+
+.pager>li>a {
+	width: 140px;
+	padding: 10px 20px;
+	text-align: center;
+	border-radius: 30px;
+}
+
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+	margin-bottom: 60px;
+}
+
+.blog-post-title {
+	margin-bottom: 5px;
+	font-size: 40px;
+}
+
+.blog-post-meta {
+	margin-bottom: 20px;
+	color: #999;
+}
+
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+	padding: 40px 0;
+	color: #999;
+	text-align: center;
+	background-color: #f9f9f9;
+	border-top: 1px solid #e5e5e5;
+}
+
+.blog-footer p:last-child {
+	margin-bottom: 0;
+}
+
+
+/*
+ * Custom Styles
+ *
+ */
+
+header {
+	text-align: center;
+	color: #fff;
+	height: 600px;
+	padding: 50px 40px;
+	background: url('../img/showcase.jpg') no-repeat center center;
+	margin-bottom: 30px;
+}
+
+.showcase {
+	text-align: center;
+	color: #fff;
+	margin-top: 100px;
+}
+
+.showcase h1 {
+	font-size: 55px;
+	padding-bottom: 20px;
+	color: #fff;
+}
+
+.showcase p {
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+
+.boxes {
+	text-align: center;
+	background: #fff;
+	margin-bottom: 30px;
+}
+
+.box .fa {
+	font-size: 45px !important;
+	margin-bottom: 10px;
+}
+
+.box {
+	padding: 15px;
+	border: #ccc 1px solid;
+}
+
+.marketing ul {
+	display: inline-block;
+	margin-left: 10%;
+	list-style: none;
+	list-style-image: url(/img/header/);
+}
+
+
+/*goal styles*/
+
+.row-section {
+	padding: 20px;
+	text-align: center;
+}
+
+.holder {
+	display: inline-block;
+}
+
+.right-display {
+	border-top: 2px solid #e85416;
+	border-bottom: 2px solid #e85416;
+	text-align: center;
+	min-width: 20%;
+}
+
+.left-display {
+	margin-right: 30%;
+}
+
+.holder ul {
+	list-style: none;
+	text-align: left;
+}
+
+.holder li {
+	padding-bottom: 25px;
+}
+
+.learn-more {
+	color: #e85416
+}
+
+
+/*wordpress*/
+
+.fl-rich-text h2 {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+
+/*page height*/
+
+.fl-node-59a91b0e20721>.fl-row-content-wrap {
+	min-height: 100%;
+}
+
+
+/*TRY FOR FREE BUTTON*/
+
+a.fl-button,
+.fl-builder-content a.fl-button {
+	background: none;
+	color: #fff;
+	border: none;
+}
+
+.fl-subscribe-form-inline .fl-form-button {
+	float: left;
+	/*    margin-left: -100px;*/
+	display: inline-block;
+}
+
+a.fl-button:hover,
+.fl-builder-content a.fl-button:hover {
+	background: none;
+	color: #ffffff;
+	border-left: 2px solid #fff;
+}
+
+
+/*TRY FOR FREE input*/
+
+.fl-form-field input[type=email] {
+	background-color: transparent;
+	border: 2px solid #e85416;
+}
+
+
+/*SLIDER */
+
+.slider-container {
+	display: inline-block;
+}
+.controllers p{
+	display: inline-block;
+	color:dimgray ;
+	font-size: 19px;
+	margin: 5px;
+	position:absolute;
+}
+
+.controllers {
+    position: relative;
+	display: inline-block;
+	font-family: sans-serif;
+}
+/*Slider controls */
+#text-1 {
+	right: 333px;
+    top: 185px;
+    position: relative;
+}
+
+#text-2 {
+    right: 384px;
+    top: 218px;
+    position: relative;
+}
+
+#text-3 {
+    right: 384px;
+    top: 260px;
+    position: relative;
+}
+#text-4 {
+    right: 354px;
+    top: 324px;
+    position: relative;
+}
+#text-5 {
+    left: 351px;
+    top: 66px;
+    position: relative;
+}
+#text-6 {
+	left: 341px;
+    top: 141px;
+	position: relative;
+}
+#text-7 {
+    left: 368px;
+    top: 237px;
+    position: relative;
+}
+
+#text-1:hover, #text-2:hover, #text-3:hover, #text-4:hover, #text-5:hover, #text-6:hover, #text-7:hover {
+    color:#e85416;
+}
+
+.cloud {
+    position: absolute;
+    display: inline-block;
+    width: 161px;
+    right: 336px;
+    top: 65px;
+}
+
+.mobile-screen {
+    position: absolute;
+    display: inline-block;
+    width: 201px;
+    right: 240px;
+    top: 363px;
+    z-index: 2;
+}
+.mac-slider {
+	margin: 0 auto;
+	z-index: 100;
+	height: auto;
+}
+.bg-mac {
+    width: 500px;
+    z-index: 1;
+    margin: 0 auto;
+	position: relative;
+}
+.image-holder {
+    margin: 0 auto;
+    z-index: 0;
+    position: absolute;
+    width: 450px;
+    height: 250px;
+    left: 376px;
+    top: 142px;
+}
+.slider-container {
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+	width: 1200px;
+}
