@@ -1,0 +1,404 @@
+/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+
+*/
+
+/*ALL FONTS*/
+
+body  {
+ font-family: Didact Gothic,open sans, sans-serif;
+}
+
+body h1 {
+ font-size: 2.5em;
+ font-family: Montserrat,open sans, sans-serif;
+ font-weight: 300;
+}
+
+/* Move the page content up to cover the header */
+/* Sized for default small device breakpoint of 768 px - change this value if you have a custom breakpoint */
+@media (min-width: 768px) { 
+  .home .fl-page-content {
+     margin-top: -182px; /*Adjust depending on the height of the header for medium devices*/
+}
+/* Stack the header on top of the content and make the background transparent */
+  .home .fl-page-header-primary {
+     position: relative;
+     z-index: 3;
+     background: none;
+  }
+}
+/* For large screens, change the margin-top value to accommodate the narrower heading */
+@media (min-width: 992px) {
+  .home .fl-page-content {
+    margin-top: -90px; /*Adjust depending on the height of the header for large devices*/
+  }
+}
+
+
+/*TRY FOR FREE input*/
+a.fl-button,  .fl-builder-content a.fl-button{
+    background: none;
+    color: #fff;
+    border: none;
+}
+
+.fl-subscribe-form-inline .fl-form-button {
+    float: left;
+	margin-left: -100px;
+    display: inline-block;
+	width:10%;
+	border-left: 2px solid #fff;
+}
+
+a.fl-button:hover, .fl-builder-content a.fl-button:hover {
+    background: none;
+    color: #ffffff;
+    border-left: 2px solid #fff;
+}
+
+/*Header fade in Size*/
+.fl-page-nav-right.fl-page-header-fixed .fl-page-header-container.container, .fl-page-header-fixed .fl-page-header-container.container {
+    padding-bottom: 8px;
+    padding-top: 25px;
+}
+
+
+/*TRY FOR FREE input*/
+.fl-form-field  input[type=email]:focus,.fl-form-field  input[type=email]{
+    background-color: transparent;
+    border: 2px solid #e85416;
+	color:#ffffff;
+}
+.fl-form-field  input::placeholder {
+  color: #fff;
+  font-size: 16px;
+}
+
+/*3rd TRY FOR FREE input */
+.embed-submit-field {
+  position: relative;
+    margin: 0 auto;
+    width: 30%;
+}
+.embed-submit-field input[type=email] {
+  width: 100%;
+  padding: 20px;
+  border: 2px solid #e85416;
+  background-color:transparent;
+  border-radius: 0px;
+  color:#fff;
+  font-size: 15px;
+}
+.embed-submit-field  input::placeholder {
+  color: #fff;
+  font-size: 18px;
+}
+.embed-submit-field img {
+    max-width: 70%;
+    border-left: 2px solid #fff;
+    padding-left: 10px;
+}
+.embed-submit-field button {
+  position: absolute;
+  right: 1px;
+  top:4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  padding: 2px;
+  border: none;
+  transition: all .2s;
+}
+.embed-submit-field button:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 768px){
+.embed-submit-field {
+    position: relative;
+    margin: 0 auto;
+    width: 35%;
+	}
+
+}
+
+@media (min-width: 468px){
+.embed-submit-field {
+    position: relative;
+    margin: 0 auto;
+    width: 45%;
+	}
+
+}
+
+@media (max-width: 357px){
+.embed-submit-field {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+	}
+
+}
+
+
+
+/*Contact Form 7*/
+.wpcf7-form{
+	width:30%;
+	margin: auto;
+}
+
+input[type=email]:focus, input[type=email] {
+    background-color: transparent;
+	color:#fff;
+    line-height: 20px;
+    padding: 6px 12px;
+    font-weight: normal;
+    border-radius: 0px;
+	border: 2px solid #e85416;
+	text-align: center;
+}
+
+.wpcf7-form input::placeholder {
+  color: #fffff;
+  font-size: 18px;
+    margin: 0 auto;
+}
+button, input[type=button], input[type=submit] {
+    background: none;
+    line-height: 20px;
+    padding: 6px 12px;
+    font-weight: normal;
+    text-shadow: none;
+    border-radius: 0px;
+	border: none;
+	    
+}
+
+ input[type=submit]:hover {
+    background: none;
+    color: #ffffff;
+    border: none;
+    text-decoration: none;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+}
+
+
+
+
+/*WHY SMS ICONS*/
+.fl-post img[class*="wp-image-"]{
+    height: auto;
+    max-width: 100%;
+}
+
+/*Section 2 ICONS*/
+.fl-icon-wrap {
+    color: #29235c;
+    font-size: 1.2em;
+}
+
+/*Logo postion*/
+.fl-page-nav-right .fl-page-header-logo {
+    padding: 0;
+    text-align: left;
+    bottom: 8px;
+    position: relative;
+}
+/*Vivking index*/
+div.fl-photo-align-center {
+    z-index: 1;
+}
+
+/*NAV Colors AND BORDERS*/
+
+.fl-page-nav-right .fl-page-nav ul.navbar-nav > li:nth-last-child(2) a {
+    color:#e85416 !important;
+}
+
+.fl-page-nav-right .fl-page-nav ul.navbar-nav > li:nth-last-child(2)  {
+    border: solid 1px #e85416 !important;
+}
+
+.fl-page-nav .navbar-nav > li > a,.fl-page-nav .navbar-nav > li > a {
+    padding: 9px 9px;
+}
+.fl-page-nav-collapse ul.navbar-nav > li {
+    border-color: #23282d;
+}
+
+
+/*NAV position*/
+@media (min-width: 992px)
+.fl-page-nav-right .fl-page-nav-wrap * {
+    top: 3px;
+}
+
+@media (min-width: 992px)
+.fl-page-nav-right .fl-page-nav-wrap {
+    margin-top: 5px;
+}
+
+
+/*SLIDER */
+
+.slider-container {
+	display: inline-block;
+}
+.controllers p{
+	display: inline-block;
+	color:dimgray ;
+	font-size: 19px;
+	margin: 5px;
+	position:absolute;
+}
+
+.controllers {
+    position: relative;
+	display: inline-block;
+	font-family: sans-serif;
+    top: 40px;
+}
+/*Slider controls */
+
+#text-1, #text-2, #text-3, #text-4, #text-5, #text-6, #text-7 {
+	position: relative;
+	cursor:default;
+}
+#text-1 {
+    right: 363px;
+    top: 187px;
+}
+
+#text-2 {
+    right: 381px;
+    top: 280px;
+}
+
+#text-3 {
+    left: 381px;
+    top: 194px;
+}
+#text-4 {
+    right: 373px;
+    top: 325px;
+}
+#text-5 {
+    left: 354px;
+    top: 244px;
+}
+#text-6 {
+    left: 345px;
+    top: 37px;
+}
+
+#text-7 {
+    right: 383px;
+    top: 114px;
+}
+
+
+
+#text-1:hover, #text-2:hover, #text-3:hover, #text-4:hover, #text-5:hover, #text-6:hover, #text-7:hover {
+    color:#e85416;
+}
+
+.line-1,.line-2,.line-3,.line-4,.line-5,.line-6,.line-7{
+	width:160px;
+    z-index: 2;
+    position: absolute;
+}
+
+
+.line-1 {
+    left: 280px;
+    top: 231px;
+}
+.line-2 {
+    left: 312px;
+    top: 280px;
+    width: 171px;
+}
+
+.line-3 {
+	bottom: 257px;
+    right: 310px;
+}
+
+.line-4 {
+	right: 841px;
+    top: 434px;
+    width: 80px;
+}
+.line-5 {
+    bottom: 163px;
+    right: 310px;
+	width: 146px;
+}
+
+.line-6 {
+    left: 729px;
+    top: 176px;
+}
+.line-7 {
+    right: 810px;
+    top: 290px;
+    width: 80px;
+}
+
+.cloud {
+    position: absolute;
+    display: inline-block;
+    width: 161px;
+    right: 336px;
+    top: 65px;
+}
+
+.line {
+    position: absolute;
+    display: inline-block;
+    width: 161px;
+    left: 154px;
+    top: 5px;
+    z-index: 1;
+}
+
+.mobile-screen {
+    position: absolute;
+    display: inline-block;
+    width: 201px;
+    right: 240px;
+    top: 363px;
+    z-index: 2;
+}
+.mac-slider {
+	margin: 0 auto;
+	z-index: 100;
+	height: auto;
+}
+.bg-mac {
+    width: 500px;
+    z-index: 1;
+    margin: 0 auto;
+	position: relative;
+}
+.image-holder {
+    margin: 0 auto;
+    z-index: 0;
+    position: absolute;
+    width: 450px;
+    height: 250px;
+    left: 375px;
+    top: 170px;
+}
+.slider-container {
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+	width: 1200px;
+}
+

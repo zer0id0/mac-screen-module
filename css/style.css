@@ -343,46 +343,91 @@ a.fl-button:hover,
 	font-family: sans-serif;
 }
 /*Slider controls */
+
+#text-1, #text-2, #text-3, #text-4, #text-5, #text-6, #text-7 {
+	position: relative;
+	cursor:default;
+}
 #text-1 {
-	right: 333px;
-    top: 185px;
-    position: relative;
+    right: 363px;
+    top: 187px;
 }
 
 #text-2 {
-    right: 384px;
-    top: 218px;
-    position: relative;
+    right: 381px;
+    top: 280px;
 }
 
 #text-3 {
-    right: 384px;
-    top: 260px;
-    position: relative;
+    left: 381px;
+    top: 219px;
 }
 #text-4 {
-    right: 354px;
-    top: 324px;
-    position: relative;
+    right: 373px;
+    top: 325px;
 }
 #text-5 {
-    left: 351px;
-    top: 66px;
-    position: relative;
+    left: 354px;
+    top: 244px;
 }
 #text-6 {
-	left: 341px;
-    top: 141px;
-	position: relative;
+    left: 345px;
+    top: 80px;
+
 }
+
 #text-7 {
-    left: 368px;
-    top: 237px;
-    position: relative;
+    right: 383px;
+    top: 134px;
 }
+
+
 
 #text-1:hover, #text-2:hover, #text-3:hover, #text-4:hover, #text-5:hover, #text-6:hover, #text-7:hover {
     color:#e85416;
+}
+
+.line-1,.line-2,.line-3,.line-4,.line-5,.line-6,.line-7{
+	width:160px;
+    z-index: 2;
+    position: absolute;
+}
+
+
+.line-1 {
+    left: 280px;
+    top: 192px;
+}
+.line-2 {
+    left: 313px;
+    top: 236px;
+	width: 171px;
+}
+
+.line-3 {
+    bottom: 259px;
+    right: 310px;
+}
+
+.line-4 {
+    right: 841px;
+    top: 384px;
+    width: 80px;
+}
+.line-5 {
+    bottom: 196px;
+    right: 310px;
+	width: 146px;
+}
+
+.line-6 {
+    left: 729px;
+    top: 158px;
+}
+.line-7 {
+    left: 309px;
+    top: 247px;
+    width: 80px;
 }
 
 .cloud {
@@ -391,6 +436,15 @@ a.fl-button:hover,
     width: 161px;
     right: 336px;
     top: 65px;
+}
+
+.line {
+    position: absolute;
+    display: inline-block;
+    width: 161px;
+    left: 154px;
+    top: 5px;
+    z-index: 1;
 }
 
 .mobile-screen {
@@ -418,7 +472,7 @@ a.fl-button:hover,
     position: absolute;
     width: 450px;
     height: 250px;
-    left: 376px;
+    left: 375px;
     top: 142px;
 }
 .slider-container {
